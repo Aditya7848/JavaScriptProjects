@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Application</title>
+    <link rel="icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <input
+          type="text"
+          placeholder="Please enter the City name..."
+          id="input-town"
+        />
+        <button type="button" id="clickbtn">
+          <img src="./images/search.png" alt="search_btn" />
+        </button>
+      </div>
+      <div class="weather">
+        <div class="weather_img">
+          <img
+            src="https://openweathermap.org/img/wn/02d@2x.png"
+            alt="sunny_img"
+            id="weatherTell_img"
+          />
+        </div>
+        <div class="weather_temp">
+          <h1 class="temp">38<sup>o</sup><span>c</span></h1>
+          <p class="city">Delhi</p>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="windSpeed">
+          <div class="wind_img">
+            <img src="./images/wind.png" alt="wind_png" />
+            <span class="wind">120kmph</span>
+          </div>
+          <p>Wind Speed</p>
+        </div>
+        <div class="humidity">
+          <div class="humidity_img">
+            <img src="./images/humidity.png" alt="humidity_img" />
+            <span class="humidit">45%</span>
+          </div>
+          <p>Humidity</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
