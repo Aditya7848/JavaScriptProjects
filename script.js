@@ -3,8 +3,8 @@ const btn = document.getElementById("clickbtn");
 btn.addEventListener("click", () => {
   const inputCity = document.getElementById("input-town").value;
 
-  
-  const url1 = `http://api.openweathermap.org/data/2.5/weather?q=${inputCity}&APPID=${key}&units=metric`;
+  const apiKey = process.env.key;
+  const url1 = `http://api.openweathermap.org/data/2.5/weather?q=${inputCity}&APPID=${apiKey}&units=metric`;
 
   const fetchData = async () => {
     await fetch(url1)
