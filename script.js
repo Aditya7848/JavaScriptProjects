@@ -3,7 +3,7 @@ const btn = document.getElementById("clickbtn");
 btn.addEventListener("click", () => {
   const inputCity = document.getElementById("input-town").value;
 
-  const key = "0f0bec9b6ebc668e09ac5ef286bbbf86";
+  
   const url1 = `http://api.openweathermap.org/data/2.5/weather?q=${inputCity}&APPID=${key}&units=metric`;
 
   const fetchData = async () => {
