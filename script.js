@@ -11,7 +11,7 @@ btn.addEventListener("click", () => {
     await fetch(url1)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        
         document.querySelector(".temp").innerHTML =
           Math.round(data.main.temp) + "<sup>o</sup><span>c</span>";
         document.querySelector(".humidit").innerHTML = data.main.humidity + "%";
@@ -20,7 +20,7 @@ btn.addEventListener("click", () => {
 
         // handling weather Icons
         const weather = data.weather[0].main.toLowerCase();
-        console.log(weather);
+        
         const getweatherimgNode = document.getElementById("weatherTell_img");
         if (weather === "rain") {
           getweatherimgNode.src =
