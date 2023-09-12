@@ -5,7 +5,7 @@ btn.addEventListener("click", () => {
 
   // const apiKey = process.env.key;
   const key = '0f0bec9b6ebc668e09ac5ef286bbbf86' 
-  const url1 = `http://api.openweathermap.org/data/2.5/weather?q=${inputCity}&APPID=${key}&units=metric`;
+  const url1 = `https://api.openweathermap.org/data/2.5/weather?q=${inputCity}&APPID=${key}&units=metric`;
 
   const fetchData = async () => {
     await fetch(url1)
